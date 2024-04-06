@@ -63,16 +63,8 @@ function draw() {
   text(displayLastName, currentLastNameXPos, yPos + 32); // Adjust as necessary for spacing
 }
 
+ // Updates position of text based on mouse cursor's position
 function updateProgress() {
-  /*
-  noFill(); // Ensure the rectangle is not filled
-  stroke(255, 0, 0); // Set the stroke color to red for visibility
-  // Rectangle for the first name
-  rect(width / 2 - maxWidth / 2, yPos - textHeight / 2, maxWidth, textHeight);
-  // Rectangle for the last name
-  rect(width / 2 - maxWidth / 2, yPos  - textHeight / 2 + 64, maxWidth, textHeight);
-  */
-  console.log(mouseX, mouseY);
   // First name hover detection
   if (mouseX >= width / 2 - maxWidth / 2 && mouseX <= width / 2 + maxWidth / 2 &&
       mouseY >= yPos - textHeight / 2 && mouseY <= yPos + textHeight / 2) {
